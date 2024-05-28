@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: CO-API
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Manasa@1998
+    url: jdbc:mysql://localhost:3306/Insurance_DB
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  mail:
+    host: smtp.gmail.com 
+    username: manasavtalent9@gmail.com
+    password: qsyvgviwwgkzwzfq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+springdoc:
+  swagger-ui:
+    path: swagger-ui.html
